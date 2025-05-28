@@ -5,10 +5,15 @@ const button = document.getElementById("start");
 let timerInterval;
 let timeLeft = 25 * 60; // 25 minutes in seconds
 
+var clickSound = new Audio("/resources/audio/button-click.mp3");
+var alarmSound = new Audio("/resources/audio/alarm.mp3");
+
 function pressButton(){
     if (button.textContent === "START") {
+        clickSound.play();
         startTimer();
     } else {
+        clickSound.play();
         pauseTimer();
     }
 }
@@ -25,6 +30,7 @@ function startTimer() {
 
         if (timeLeft <= 0) {
             clearInterval(timerInterval);
+            alarmSound.play();
             alert("Time's up!");
         } else {
             timeLeft--;
