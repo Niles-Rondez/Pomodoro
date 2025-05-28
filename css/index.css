@@ -42,20 +42,10 @@ body {
     padding: 15px 50px;
     text-align: center;
     font-weight: bold;
-    text-decoration: none;
-    display: inline-block;
     font-size: 20px;
-    margin: 0px 2px;
     cursor: pointer;
     border-radius: 5%;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    transition: transform 0.2s, background-color 0.3s, color 0.3s;   
-}
-
-.controls button:hover{
-    background-color: white;
-    font-weight: medium;
-    color: white;
+    width: 50%;
 }
 
 .title{
