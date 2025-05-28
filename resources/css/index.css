@@ -1,0 +1,72 @@
+body {
+    font-family:Arial, Helvetica, sans-serif;
+    background-color: rgb(199, 73, 73);
+    margin: 0;
+    padding: 20px;
+    height: 100vh;
+    display: flex;  
+    justify-content: center;
+}
+
+.timer-container {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    padding: 20px 70px;
+    text-align: center;
+}
+
+.modes button{
+    background-color: transparent;
+    border: none;
+    color: white;
+    padding: 5px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.modes button.active{
+    background-color: rgba(0, 0, 0, 0.3);
+    font-weight: bold;
+    border-radius: 10%;
+}
+
+
+.controls button{
+    background-color: white;
+    border: none;
+    color: rgb(199, 73, 73);
+    padding: 15px 50px;
+    text-align: center;
+    font-weight: bold;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    margin: 0px 2px;
+    cursor: pointer;
+    border-radius: 5%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s, background-color 0.3s, color 0.3s;   
+}
+
+.controls button:hover{
+    background-color: white;
+    font-weight: medium;
+    color: white;
+}
+
+.title{
+    color: white;
+    text-align: center;
+}
+
+.time{
+    text-align: center;
+    font-size: 120px;
+    color: white;
+    font-weight: bold;
+    padding-bottom: 10px;
+}
